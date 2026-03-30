@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="WordFastLogo.png" alt="WordFast — keyboard-first Word documents in Windows File Explorer" width="520" />
+  <img src="WordFastLogo.png" alt="Fast Word (WordFast) — keyboard-first Word documents in Windows File Explorer" width="520" />
 </p>
 
-# Instant Word — keyboard‑first Word documents in File Explorer
+# Fast Word — keyboard‑first Word documents in File Explorer
 
 <p align="center">
   <a href="https://www.microsoft.com/windows/windows-11" title="Built for Windows 11">
@@ -11,12 +11,12 @@
   <a href="#install-autohotkey-v2" title="Install AutoHotkey v2 (hotkey engine)">
     <img src="https://img.shields.io/badge/AutoHotkey-v2-648293?style=for-the-badge&logo=autohotkey&logoColor=white" alt="AutoHotkey v2 — download and install for custom hotkeys" />
   </a>
-  <a href="#hotkeys-at-a-glance" title="Keyboard hotkeys in WordFast">
+  <a href="#hotkeys-at-a-glance" title="Keyboard hotkeys in Fast Word">
     <img src="https://img.shields.io/badge/Hotkeys-Ctrl%20%2B%20Shift-512BD4?style=for-the-badge&logo=keyboard&logoColor=white" alt="Hotkeys — Ctrl+Shift shortcuts in File Explorer" />
   </a>
 </p>
 
-**Instant Word** is a tiny [AutoHotkey v2](https://www.autohotkey.com/) helper for people who live in the **keyboard**, **shortcuts**, and a **CLI‑style rhythm**: stay in File Explorer, never reach for the mouse, and spin up **blank Microsoft Word** (`.docx`) files as fast as you create folders.
+**Fast Word** is a tiny [AutoHotkey v2](https://www.autohotkey.com/) helper for people who live in the **keyboard**, **shortcuts**, and a **CLI‑style rhythm**: stay in File Explorer, never reach for the mouse, and spin up **blank Microsoft Word** (`.docx`) files as fast as you create folders.
 
 If your ideal workflow is *Explorer in focus → chord → new file*, this repo is for you.
 
@@ -47,7 +47,7 @@ Use **Ctrl+Shift+N** to carve the folder, **Ctrl+Shift+D** to drop another Word 
 2. **Copy into the current folder** — With File Explorer focused on your target directory, **Ctrl+Shift+D** **copies** that template into that folder as the next free name (`New document.docx`, `New document (2).docx`, …).  
 3. **Fast iteration** — The heavy lifting is a file copy, so you can fire **multiple documents in seconds** while staying on the keyboard.
 
-That’s the whole idea: one silent template in **Downloads**, unlimited **instant clones** wherever Explorer is pointing.
+That’s the whole idea: one silent template in **Downloads**, unlimited **fast copies** wherever Explorer is pointing.
 
 ---
 
@@ -61,7 +61,7 @@ That’s the whole idea: one silent template in **Downloads**, unlimited **insta
 
 ## Install AutoHotkey v2
 
-WordFast’s **Ctrl+Shift+D** shortcut is implemented with [**AutoHotkey v2**](https://www.autohotkey.com/): free, open-source hotkey and automation tooling for Windows. Install it once, then keep **`Create Word.ahk`** running (or compile it to an `.exe`).
+Fast Word’s **Ctrl+Shift+D** shortcut is implemented with [**AutoHotkey v2**](https://www.autohotkey.com/): free, open-source hotkey and automation tooling for Windows. Install it once, then keep **`Create Word.ahk`** running (or compile it to an `.exe`).
 
 ### Download and install (English)
 
@@ -100,6 +100,6 @@ WordFast’s **Ctrl+Shift+D** shortcut is implemented with [**AutoHotkey v2**](h
 ## SEO / discovery notes (for maintainers)
 
 *Suggested GitHub repository description (≈160 characters):*  
-**AutoHotkey Windows 11 File Explorer shortcut: Ctrl+Shift+D creates blank Word .docx from a Downloads template — keyboard-only, power-user workflow.**
+**Fast Word (WordFast): AutoHotkey Windows 11 File Explorer shortcut — Ctrl+Shift+D creates blank Word .docx from a Downloads template; keyboard-only, power-user workflow.**
 
 *Topics / tags to add on GitHub:* `autohotkey`, `windows-11`, `file-explorer`, `keyboard-shortcuts`, `microsoft-word`, `docx`, `productivity`, `ahk-v2`, `power-user`, `cli-style`.
