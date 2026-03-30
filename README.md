@@ -8,8 +8,11 @@
   <a href="https://www.microsoft.com/windows/windows-11" title="Built for Windows 11">
     <img src="https://img.shields.io/badge/Windows-11-0078D6?style=for-the-badge&logo=windows11&logoColor=white" alt="Windows 11 — compatible productivity tool for File Explorer" />
   </a>
-  <a href="#hotkeys-at-a-glance" title="Global and Explorer hotkeys">
-    <img src="https://img.shields.io/badge/Hotkeys-Ctrl%20%2B%20Shift-512BD4?style=for-the-badge&logo=keyboard&logoColor=white" alt="Keyboard shortcuts and hotkey-driven workflow" />
+  <a href="#install-autohotkey-v2" title="Install AutoHotkey v2 (hotkey engine)">
+    <img src="https://img.shields.io/badge/AutoHotkey-v2-648293?style=for-the-badge&logo=autohotkey&logoColor=white" alt="AutoHotkey v2 — download and install for custom hotkeys" />
+  </a>
+  <a href="#hotkeys-at-a-glance" title="Keyboard hotkeys in WordFast">
+    <img src="https://img.shields.io/badge/Hotkeys-Ctrl%20%2B%20Shift-512BD4?style=for-the-badge&logo=keyboard&logoColor=white" alt="Hotkeys — Ctrl+Shift shortcuts in File Explorer" />
   </a>
 </p>
 
@@ -51,14 +54,43 @@ That’s the whole idea: one silent template in **Downloads**, unlimited **insta
 ## Requirements
 
 - **Windows 11** (or Windows 10 with equivalent File Explorer COM behavior)  
-- **AutoHotkey v2**  
+- **AutoHotkey v2** — see [Install AutoHotkey v2](#install-autohotkey-v2) (this is what runs your **hotkeys**; there is no separate “Hotkeys” app to install)  
 - **Microsoft Word** (needed the first time to create `empty.docx`, and for opening/editing the files afterward)
+
+---
+
+## Install AutoHotkey v2
+
+WordFast’s **Ctrl+Shift+D** shortcut is implemented with [**AutoHotkey v2**](https://www.autohotkey.com/): free, open-source hotkey and automation tooling for Windows. Install it once, then keep **`Create Word.ahk`** running (or compile it to an `.exe`).
+
+### Download and install (English)
+
+1. Open **[autohotkey.com](https://www.autohotkey.com/)** and choose **Download** (official installer).  
+2. Run the installer and select **AutoHotkey v2** when asked. This repo uses v2 only (`#Requires AutoHotkey v2.0` in the script).  
+3. After setup, double-click **`Create Word.ahk`**. If Windows asks which program to use, pick **AutoHotkey v2**.  
+4. (Optional) To start the script with Windows: place a shortcut in the Startup folder (`Win+R` → `shell:startup`) or use Task Scheduler.
+
+### Documentation
+
+| Resource | Link |
+|----------|------|
+| **Home & download** | [https://www.autohotkey.com/](https://www.autohotkey.com/) |
+| **AutoHotkey v2 docs** | [https://www.autohotkey.com/docs/v2/](https://www.autohotkey.com/docs/v2/) |
+| **Getting started** | [https://www.autohotkey.com/docs/v2/Welcome.htm](https://www.autohotkey.com/docs/v2/Welcome.htm) |
+| **Hotkeys (`::`)** | [https://www.autohotkey.com/docs/v2/Hotkeys.htm](https://www.autohotkey.com/docs/v2/Hotkeys.htm) |
+
+### Installatie (Nederlands)
+
+1. Ga naar **[autohotkey.com](https://www.autohotkey.com/)** → **Download** en voer het officiële installatieprogramma uit.  
+2. Kies **AutoHotkey v2** (niet versie 1 — dit project is alleen v2).  
+3. Dubbelklik daarna op **`Create Word.ahk`** om de hotkeys te activeren.  
+4. Uitgebreide uitleg (Engels): **[AutoHotkey v2-documentatie](https://www.autohotkey.com/docs/v2/)** en **[pagina over hotkeys](https://www.autohotkey.com/docs/v2/Hotkeys.htm)**.
 
 ---
 
 ## Setup
 
-1. Install **AutoHotkey v2**.  
+1. Install **AutoHotkey v2** (see [Install AutoHotkey v2](#install-autohotkey-v2)).  
 2. Save or clone this repo where you like (the script path does not have to match your documents folder).  
 3. Run **`Create Word.ahk`** (or compile it and run the executable).  
 4. Open **File Explorer**, focus the folder you want, press **Ctrl+Shift+D**.
